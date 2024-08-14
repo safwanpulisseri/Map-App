@@ -2,8 +2,9 @@
     <application
         android:label="flutter_application_3"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
-        
+        android:icon="@mipmap/ic_launcher"
+        android:enableOnBackInvokedCallback="true"> <!-- Added attribute here -->
+
         <!-- Add the Google Maps API Key here -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -32,9 +33,11 @@
             android:value="2"/>
     </application>
 
-     <!-- Permissions for Location -->
+    <!-- Permissions for Location -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <queries>
         <intent>
