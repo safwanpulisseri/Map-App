@@ -7,7 +7,7 @@ class MapScreenTwo extends StatefulWidget {
   const MapScreenTwo({super.key});
 
   @override
-  _MapScreenTwoState createState() => _MapScreenTwoState();
+  createState() => _MapScreenTwoState();
 }
 
 class _MapScreenTwoState extends State<MapScreenTwo> {
